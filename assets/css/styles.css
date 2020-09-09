@@ -1,0 +1,63 @@
+:root {
+    --main-action-color: #1FC859;
+    --naveka-bg-color: #0163AC;
+}
+
+/* Navbar */
+.bd-navbar {
+    min-height: 4rem;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05),inset 0 -1px 0 rgba(0,0,0,.1);
+}
+.nav-item {
+    margin: 0 10px;
+}
+.nav-item a {
+    color: #000;
+}
+.active a {
+    font-weight: bold;
+}
+.main-action-button a {
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    background: var(--main-action-color);
+}
+/* Main section */
+
+#home-area {
+    color: #fff;
+    background: linear-gradient(116.66deg, rgba(146, 183, 246, 0.78) 0.06%, #0163AC 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 650px;
+    position: relative;
+    overflow: hidden;
+    padding: 180px 0 80px;
+}
+
+.home-header {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.home-header small {
+    font-weight: lighter;
+}
+.home-recomendations {
+    padding: 100px 0;
+}
+.home-recomendations img {
+    height: 50px;
+}
+.btn-home-buy {
+    color: #fff;
+    border-radius: 10px;
+    background: var(--naveka-bg-color);
+}
+.btn-home-buy:hover {
+    color: #fff;
+    border: 1px solid #fff;
+    background: var(--naveka-bg-color);
+}
