@@ -3,6 +3,23 @@
     --naveka-bg-color: #0163AC;
 }
 
+/* General */
+
+.heading-purpose {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.heading-purpose small {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    color: #174A9F;
+    text-transform: uppercase;
+}
+
+
 /* Navbar */
 .bd-navbar {
     min-height: 4rem;
@@ -60,4 +77,18 @@
     color: #fff;
     border: 1px solid #fff;
     background: var(--naveka-bg-color);
+}
+
+/* For Home section */
+
+.for-home {
+    height: 590px;
+    background: url(../../assets/img/naveka-for-home.jpg) no-repeat;
+}
+
+@media (max-width: 900px) {
+    .for-home {
+        height: auto;
+        background: #e4e3e1;
+    }
 }
