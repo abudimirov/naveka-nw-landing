@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/js/lightbox/css/lightbox.css">
 </head>
-<body>
-    <header id="header-wrap">
-        <nav class="navbar navbar-expand-md bd-navbar fixed-top scrolling-navbar">
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+        <nav id="navbar" class="navbar navbar-expand-md bd-navbar fixed-top scrolling-navbar">
             <div class="container">
                 <a href="index.html" class="navbar-brand"><img src="assets/img/logo.png" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +19,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="#home-area">
                                 Главная
                             </a>
@@ -31,12 +30,12 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team">
+                            <a class="nav-link" href="#for-professionals">
                                 Для профессионалов
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#pricing">
+                            <a class="nav-link" href="#support">
                                 Поддержка
                             </a>
                         </li>
@@ -49,150 +48,268 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <section id="home-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2 align-self-center">
-                    <div class="intro-img">
-                        <img class="img-fluid" src="./assets/img/home-intro.png" alt="Установка Naveka">
+    <div class="content">
+        <section id="home-area">
+            <div class="container">
+                <div class="row  align-items-center">
+                    <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
+                        <div class="intro-img">
+                            <img class="img-fluid" src="./assets/img/home-intro.png" alt="Установка Naveka">
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
-                    <h1 class="home-header">Российское
-                        <small>вентиляционное оборудование</small>
-                    </h1>
-                    <p>Вентиляция <strong>Naveka</strong> производится на основе современных технологий, качественных материалов и богатого профессионального опыта коллектива единомышленников. </p>
-                    <p>Возможность поставки вентиляционного оборудования в комплекте с системами автоматики и управления, как правило, даёт ещё и выгодное ценовое решение вентиляционных задач.</p>
-                    <a class="btn btn-home-buy mt-3" href="#" role="button">Где купить?</a>
-                    <div class="home-videos d-flex justify-content-between mt-5">
-                        <a class="video-link" href="https://www.youtube.com/watch?v=XTjv4p-aXuw" data-lightbox="set">
-                            <img class="img-fluid" src="assets/img/video-1.png"/>
-                        </a>
-                        <a class="video-link" href="https://www.youtube.com/watch?v=TB7t3obDPng" data-lightbox="set">
-                            <img class="img-fluid" src="assets/img/video-2.png"/>
-                        </a>
+                    <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
+                        <h1 class="home-header">Российское
+                            <small>вентиляционное оборудование</small>
+                        </h1>
+                        <p>Вентиляция <strong>Naveka</strong> производится на основе современных технологий, качественных материалов и богатого профессионального опыта коллектива единомышленников. </p>
+                        <p>Возможность поставки вентиляционного оборудования в комплекте с системами автоматики и управления, как правило, даёт ещё и выгодное ценовое решение вентиляционных задач.</p>
+                        <a class="btn btn-home-buy mt-3" href="#" role="button">Где купить?</a>
+                        <div class="home-videos d-flex justify-content-between mt-5">
+                            <a class="video-link" href="https://www.youtube.com/watch?v=XTjv4p-aXuw" data-lightbox="set">
+                                <img class="img-fluid" src="assets/img/video-1.png"/>
+                            </a>
+                            <a class="video-link" href="https://www.youtube.com/watch?v=TB7t3obDPng" data-lightbox="set">
+                                <img class="img-fluid" src="assets/img/video-2.png"/>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-            </div>
-        </div>
-        <div class="container">
-            <div class="home-recomendations d-flex justify-content-center align-items-center">
-                <div class="p-2">Нам доверяют компании:</div>
-                <div class="p-2">
-                    <img class="img-fluid" src="assets/img/gazprom-logo.png" alt="Газпром Нефть">
-                </div>
-                <div class="p-2">
-                    <img class="img-fluid" src="assets/img/tokyo-city-logo.png" alt="Сеть доставок Токио-Сити">
-                </div>
-                <div class="p-2">
-                    <img class="img-fluid" src="assets/img/expoforum-logo.png" alt="Экспофорум">
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="vent-for-home">
-        <div class="container-fluid for-home d-flex">
-            <div class="container align-self-center">
-                <div class="col-xs-12 col-lg-6 offset-lg-6">
-                    <h2 class="heading-purpose">Для дома и офиса<small>Naveka Node</small></h2>
-                    <p>Naveka Node создана для организации вентиляции в обычных помещениях и
-                        помещениях с повышенной влажностью и ограниченным пространством
-                        для монтажа. Вентиляционные установки Naveka Node - моноблочные с
-                        уже установленной автоматикой и выносным пультом управления.</p>
-                    <p>Naveka Node - готовы работать «из коробки». Достаточно смонтировать
-                        установку в помещении, подсоединить воздуховоды и датчик температуры
-                        для вентиляционного канала, подключить к электросети и включить. </p>
+            <div class="container">
+                <div class="home-recomendations d-flex justify-content-center align-items-center">
+                    <div class="p-2">Нам доверяют компании:</div>
+                    <div class="p-2">
+                        <img class="img-fluid" src="assets/img/gazprom-logo.png" alt="Газпром Нефть">
+                    </div>
+                    <div class="p-2">
+                        <img class="img-fluid" src="assets/img/tokyo-city-logo.png" alt="Сеть доставок Токио-Сити">
+                    </div>
+                    <div class="p-2">
+                        <img class="img-fluid" src="assets/img/expoforum-logo.png" alt="Экспофорум">
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-                <ul class="nav nav-tabs mt-5 mb-5" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Приточные установки</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Приточно-вытяжные установки</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Канальная вентиляция</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
-                                <img class="img-fluid p-4" src="./assets/img/NODE2.jpg" alt="Naveka Node2">
+        </section>
+
+        <section id="vent-for-home">
+            <div class="container-fluid for-home d-flex">
+                <div class="container align-self-center">
+                    <div class="col-xs-12 col-lg-6 offset-lg-6">
+                        <h2 class="heading-purpose">Для дома и офиса<small>Naveka Node</small></h2>
+                        <p>Naveka Node создана для организации вентиляции в обычных помещениях и
+                            помещениях с повышенной влажностью и ограниченным пространством
+                            для монтажа. Вентиляционные установки Naveka Node - моноблочные с
+                            уже установленной автоматикой и выносным пультом управления.</p>
+                        <p>Naveka Node - готовы работать «из коробки». Достаточно смонтировать
+                            установку в помещении, подсоединить воздуховоды и датчик температуры
+                            для вентиляционного канала, подключить к электросети и включить. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                    <ul class="nav nav-tabs mt-5 mb-2" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Приточные установки</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Приточно-вытяжные установки</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Канальная вентиляция</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
+                                    <img class="img-fluid p-4" src="./assets/img/NODE2.jpg" alt="Naveka Node2">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
+                                    <p class="h1 mb-5">Node2</p>
+                                    <ul>
+                                        <li>Установлен самый тихий в своем классе немецкий
+                                            вентилятор типа - улитка.</li>
+                                        <li>Безопасный РТС нагреватель.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
-                                <p class="h1 mb-5">Node2</p>
-                                <ul>
-                                    <li>Установлен самый тихий в своем классе немецкий
-                                        вентилятор типа - улитка.</li>
-                                    <li>Безопасный РТС нагреватель.</li>
-                                </ul>
+                            <div class="row align-items-center mt-5">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <img class="img-fluid p-4" src="./assets/img/node4.jpg" alt="Naveka Node4">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="h1 mb-5">Node4</p>
+                                    <ul>
+                                        <li>Установлено напористое, немецкое мотор-колесо.</li>
+                                        <li>Есть уличное исполнение.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="row align-items-center mt-5">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <img class="img-fluid p-4" src="./assets/img/node4.jpg" alt="Naveka Node4">
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
+                                    <img class="img-fluid p-4" src="./assets/img/Node1.png" alt="Naveka Node1" loading="lazy">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
+                                    <p class="h1 mb-5">Node1</p>
+                                    <ul>
+                                        <li>Пластинчатый рекуператор - алюминиевый.</li>
+                                        <li>Установлены самые тихие в своем классе немецкие вентиляторы типа - улитка.</li>
+                                        <li>Есть исполнение для влажных помещений - AQUA.</li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <p class="h1 mb-5">Node4</p>
-                                <ul>
-                                    <li>Установлено напористое, немецкое мотор-колесо.</li>
-                                    <li>Есть уличное исполнение.</li>
-                                </ul>
+                            <div class="row align-items-center mt-5">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <img class="img-fluid p-4" src="./assets/img/node3.jpg" alt="Naveka Node3" loading="lazy">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="h1 mb-5">Node3</p>
+                                    <ul>
+                                        <li>Роторный рекуператор.</li>
+                                        <li>ЕУстановливаются самые тихие в своем классе немецкие вентиляторы АС типа-улитка, или ЕС моторы.</li>
+                                        <li>Высокое КПД рекуператора.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
+                                    <img class="img-fluid p-4" src="./assets/img/node5.jpg" alt="Naveka Node5" loading="lazy">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
+                                    <p class="h1 mb-5">Node5</p>
+                                    <ul>
+                                        <li>Пластинчатый рекуператор - мембранный.</li>
+                                        <li>Установлены напористые, немецкие мотор-колёса.</li>
+                                        <li>Есть уличное исполнение.</li>
+                                        <li>Не требует отвода дренажа.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
+                                    <img class="img-fluid p-4" src="./assets/img/naveka-kruglij-vent.jpg" alt="Naveka для круглого канала" loading="lazy">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
+                                    <p class="h1 mb-5">Для круглого канала</p>
+                                    <ul>
+                                        <li>Диаметр подключений: 100, 125, 160, 200, 315 мм.</li>
+                                        <li>Максимальный расход воздуха от 380 до 1900 м3/ч.</li>
+                                        <li>Максимальное давление от 350 до 760 Па.</li>
+                                        <li>Стандартный пластиковый корпус и металлический шумоизолированный.</li>
+                                        <li>Все вентиляторы оснащаются немецким двигателем ebm-papst.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row align-items-center mt-5">
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <img class="img-fluid p-4" src="./assets/img/naveka-prujamougolnij-vent.jpg" alt="Naveka для прямоугольного канала" loading="lazy">
+                                </div>
+                                <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                    <p class="h1 mb-5">Для прямоугольного канала</p>
+                                    <ul>
+                                        <li>Подключение к каналу от 400 х 200 мм до 1000 х 500 мм.</li>
+                                        <li>Максимальный расход воздуха от 1350 до 18000 м3/ч.</li>
+                                        <li>Максимальное давление от 570 до 1150 Па.</li>
+                                        <li>Корпус из оцинкованной стали, есть шумоизолированное исполнение.</li>
+                                        <li>Все вентиляторы оснащаются немецким двигателем ebm-papst.</li>
+                                        <li>Лопатки вентилятора могут быть загнуты вперед или назад.</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
-                                <img class="img-fluid p-4" src="./assets/img/NODE2.jpg" alt="Naveka Node1">
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
-                                <p class="h1 mb-5">Node1</p>
-                                <ul>
-                                    <li>Пластинчатый рекуператор - алюминиевый.</li>
-                                    <li>Установлены самые тихие в своем классе немецкие вентиляторы типа - улитка.</li>
-                                    <li>Есть исполнение для влажных помещений - AQUA.</li>
-                                </ul>
-                            </div>
+            </div>
+        </section>
+
+        <section id="for-professionals">
+            <div class="container-fluid for-professionals pt-5 pb-5">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xs-12 col-lg-6">
+                            <h2 class="heading-purpose white-text">Для профессионалов<small>Naveka VAST1</small></h2>
+                            <p class="white-text">Вентиляционные установки серии VAST1 предназначены для
+                                выполнения всех задач по обработке воздуха: увлажнение,
+                                осушение, рекуперация, фильтрация, нагрев, охлаждение, смешение.</p>
+                            <p class="white-text">
+                                Установки имеют каркасно-панельную конструкцию с негорючей
+                                минеральной ватой в качестве изоляции в панелях установки.
+                            </p>
                         </div>
-                        <div class="row align-items-center mt-5">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <img class="img-fluid p-4" src="./assets/img/node3.jpg" alt="Naveka Node3">
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-                                <p class="h1 mb-5">Node3</p>
-                                <ul>
-                                    <li>Роторный рекуператор.</li>
-                                    <li>ЕУстановливаются самые тихие в своем классе немецкие вентиляторы АС типа-улитка, или ЕС моторы.</li>
-                                    <li>Высокое КПД рекуператора.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="row align-items-center">
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 order-1 order-lg-2">
-                                <img class="img-fluid p-4" src="./assets/img/node5.jpg" alt="Naveka Node5">
-                            </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12  order-2 order-lg-1">
-                                <p class="h1 mb-5">Node5</p>
-                                <ul>
-                                    <li>Пластинчатый рекуператор - мембранный.</li>
-                                    <li>Установлены напористые, немецкие мотор-колёса.</li>
-                                    <li>Есть уличное исполнение.</li>
-                                    <li>Не требует отвода дренажа.</li>
-                                </ul>
-                            </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <img class="img-fluid" src="./assets/img/VAST.png" alt="Промышленная установка Naveka">
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">Вентилятор канальный круглый, прямоугольный</div>
+                    <div class="row justify-content-between for-professionals-advantages">
+                        <div class="col-xs-12 col-lg-6">
+                            <h3>Производительность<small>от 500 м3/ч до 90 000 м3/ч</small></h3>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <h3>Для любых помещений<small>21+ типоразмер</small></h3>
+                        </div>
+                    </div>
                 </div>
-        </div>
-    </section>
+            </div>
+            <div class="container mt-5 mb-5">
+                <p class="h3">Ключевые особенности VAST1:</p>
+                <div class="row">
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+                            <li>Возможно изготовление нестандартных типоразмеров.</li>
+                            <li>4 варианта исполнения: общепромышленное, для бассейнов и
+                                помещений с повышенной влажностью (AQUA), а так же гигиенического
+                                исполнения для чистых помещений. </li>
+                            <li>Комплектация современной системой автоматики любой сложности.</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-6">
+                        <ul>
+                            <li>Толщина панелей 25мм и 50мм.</li>
+                            <li>Изготовление панелей из:
+                                <ul>
+                                    <li>оцинкованной стали;</li>
+                                    <li>оцинкованной стали с покраской в цвета палитры RAL;</li>
+                                    <li>нержавеющей стали класса AISI 304 или AISI 430.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="support">
+            <div class="card bg-dark text-white">
+                <img src="assets/img/service.jpg" class="card-img" alt="Гарантия и сервис Naveka">
+                <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h2>Гарантия и сервис</h2>
+                </div>
+            </div>
+            <div class="container mt-5 mb-5">
+                <div class="row d-flex align-items-center">
+                    <div class="col-xs-12 col-lg-7">
+                        <p class="h3">Гарантия на установки Naveka - <strong>3 года</strong></p>
+                        <p>Гарантия на канальную вентиляцию и другое оборудование бренда Naveka - от 1 до 3 лет.</p>
+                        <p>Для клиентов, непосредственно использующих наше оборудование на своих обьектах, есть программа расширенной гарантии на наше
+                            оборудование до 5 лет, при условии сервисного обслуживания компанией, сотрудники которой прошли у нас обучение по программе - “Эксплуатация и
+                            сервис оборудования Naveka и Lindab”, и получившей у нас соответствующий сертификат. </p>
+                        <a href="https://progress-nw.ru/garantiya-i-servis" target="_blank">Порядок действий по рекламации</a>
+                    </div>
+                    <div class="col-xs-12 col-lg-5">
+                        <a href="https://progress-nw.ru/documentation" target="_blank">
+                            <div class="tech-docs p-3 d-flex align-items-center">
+                                <img class="img-fluid" alt="Техническая документация" src="assets/img/docu.png">
+                                <p class="h2 ml-3">Техническая <br> документация</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
