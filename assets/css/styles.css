@@ -19,7 +19,15 @@
     text-transform: uppercase;
 }
 
+.heading-section {
+    font-size: 4rem;
+}
 
+@media (max-width: 576px) {
+    .heading-section {
+        font-size: 1.5rem;
+    }
+}
 
 
 /* Navbar */
@@ -39,22 +47,26 @@ a.active {
 }
 .main-action-button a {
     color: #fff;
-    font-weight: bold;
     border-radius: 10px;
     background: var(--main-action-color);
+}
+.main-action-button a.active {
+    background: none;
+    color: #000;
+
 }
 /* Main section */
 
 #home-area {
     color: #fff;
-    background: linear-gradient(116.66deg, rgba(146, 183, 246, 0.78) 0.06%, #0163AC 100%);
+    background: linear-gradient(296.66deg, rgba(146, 183, 246, 0.78) 0.06%, #0163AC 100%);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 650px;
     position: relative;
     overflow: hidden;
-    padding: 180px 0 80px;
+    padding: 140px 0 80px;
 }
 
 .home-header {
@@ -64,12 +76,7 @@ a.active {
 .home-header small {
     font-weight: lighter;
 }
-.home-recomendations {
-    padding: 100px 0;
-}
-.home-recomendations img {
-    height: 50px;
-}
+
 .btn-home-buy {
     color: #fff;
     border-radius: 10px;
@@ -89,18 +96,21 @@ a.active {
     background-size: cover;
 }
 
-.nav-tabs {
-    border: none;
+#homeTab .nav-item {
+    background: #eaeaea;
+    margin: 0 10px -1px 0;
+    border-radius: 0.25rem 0.25rem 0 0;
 }
 
-
-.nav-tabs .nav-link.active {
-    border: none;
+#homeTab .nav-item a {
+    color: #757575;
 }
 
-.nav-tabs .nav-link.active:hover {
-    border: none;
+#homeTab .nav-link.active {
+    color: #000;
+    font-weight: normal;
 }
+
 
 @media (max-width: 900px) {
     .for-home {
@@ -150,4 +160,24 @@ a.active {
 
 .tech-docs:hover {
     box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
+}
+
+/* Buy Naveka section */
+
+#buyNaveka {
+    background: #92B7F6;
+}
+
+.place-to-buy {
+    background: #fff;
+    border-radius: 10px;
+}
+
+.dealers-link {
+    color: #757575;
+}
+
+.dealers-link:hover {
+    color: #000;
+    text-decoration: underline;
 }
