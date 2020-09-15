@@ -44,6 +44,7 @@
 .bd-navbar {
     min-height: 4rem;
     background-color: #fff;
+    -webkit-box-shadow: 0 .5rem 1rem rgba(0,0,0,.05),inset 0 -1px 0 rgba(0,0,0,.1);
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.05),inset 0 -1px 0 rgba(0,0,0,.1);
 }
 .nav-item {
@@ -69,6 +70,7 @@ a.active {
 
 #home-area {
     color: #fff;
+    background: -o-linear-gradient(153.34deg, rgba(146, 183, 246, 0.78) 0.06%, #0163AC 100%);
     background: linear-gradient(296.66deg, rgba(146, 183, 246, 0.78) 0.06%, #0163AC 100%);
     background-position: center center;
     background-repeat: no-repeat;
@@ -138,6 +140,8 @@ a.active {
 /* For Professionals section */
 
 .for-professionals {
+    background: -webkit-gradient(linear, left top, left bottom, from(#327DD6), color-stop(99.99%, rgba(61, 133, 218, 0.558354)), to(rgba(255, 255, 255, 0.42)));
+    background: -o-linear-gradient(top, #327DD6 0%, rgba(61, 133, 218, 0.558354) 99.99%, rgba(255, 255, 255, 0.42) 100%);
     background: linear-gradient(180deg, #327DD6 0%, rgba(61, 133, 218, 0.558354) 99.99%, rgba(255, 255, 255, 0.42) 100%);
 }
 
@@ -168,13 +172,20 @@ a.active {
 .tech-docs {
     background-color: var(--naveka-bg-color);
     color: #fff;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-box-shadow: rgb(179, 179, 179) 0px 2px 2px 0px;
     box-shadow: rgb(179, 179, 179) 0px 2px 2px 0px;
+    -webkit-transition: -webkit-box-shadow 0.1s ease-in-out 0s;
+    transition: -webkit-box-shadow 0.1s ease-in-out 0s;
+    -o-transition: box-shadow 0.1s ease-in-out 0s;
     transition: box-shadow 0.1s ease-in-out 0s;
+    transition: box-shadow 0.1s ease-in-out 0s, -webkit-box-shadow 0.1s ease-in-out 0s;
     border-radius: 10px;
 }
 
 .tech-docs:hover {
+    -webkit-box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
     box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
 }
 
@@ -183,7 +194,13 @@ a.active {
 #buyNaveka {
     background: var(--footer-bg-color);
     border-top: 1px solid rgb(230, 230, 230);
+    -webkit-transition: opacity 500ms ease-out 0.2s, -webkit-transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s;
+    transition: opacity 500ms ease-out 0.2s, -webkit-transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s;
+    -o-transition: opacity 500ms ease-out 0.2s, transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s;
     transition: opacity 500ms ease-out 0.2s, transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s;
+    transition: opacity 500ms ease-out 0.2s, transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s, -webkit-transform 500ms cubic-bezier(0, 0.9, 0.1, 1) 0.2s;
+    -webkit-transform: translate(0px);
+    -ms-transform: translate(0px);
     transform: translate(0px);
 }
 
@@ -193,12 +210,18 @@ a.active {
 
 .place-to-buy {
     background: #fff;
+    -webkit-box-shadow: rgb(179, 179, 179) 0px 2px 2px 0px;
     box-shadow: rgb(179, 179, 179) 0px 2px 2px 0px;
+    -webkit-transition: -webkit-box-shadow 0.1s ease-in-out 0s;
+    transition: -webkit-box-shadow 0.1s ease-in-out 0s;
+    -o-transition: box-shadow 0.1s ease-in-out 0s;
     transition: box-shadow 0.1s ease-in-out 0s;
+    transition: box-shadow 0.1s ease-in-out 0s, -webkit-box-shadow 0.1s ease-in-out 0s;
     border-radius: 10px;
 }
 
 .place-to-buy:hover {
+    -webkit-box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
     box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
 }
 
