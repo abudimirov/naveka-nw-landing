@@ -188,6 +188,11 @@ a.active {
     -webkit-box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
     box-shadow: rgb(179, 179, 179) 0px 3px 6px 0px;
 }
+@media (max-width: 576px) {
+    .tech-docs p {
+        font-size: 1.5rem;
+    }
+}
 
 /* Buy Naveka section */
 
